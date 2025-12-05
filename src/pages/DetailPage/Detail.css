@@ -1,0 +1,136 @@
+/* Detail.css */
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+
+.detail-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+  color: #1f2937;
+}
+
+/* هدر و عنوان */
+.detail-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-header h1 {
+  font-size: 1.8rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.detail-location {
+  color: #6b7280;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* گرید اطلاعات اصلی (قیمت، متراژ و...) */
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-item span.label {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.info-item span.value {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* امکانات (آسانسور و ...) */
+.detail-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.feature-badge {
+  background-color: #ecfccb; /* سبز ملایم */
+  color: #3f6212;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* توضیحات */
+.detail-description {
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* دکمه‌ها و لینک‌ها */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1.5rem;
+}
+
+.btn-external {
+  background-color: #ef4444; /* قرمز دیوار */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-external:hover {
+  background-color: #dc2626;
+}
+
+.btn-back {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #eff6ff;
+}
+
+/* حالت لودینگ */
+.loading-text {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'Vazirmatn', sans-serif;
+  color: #6b7280;
+}
